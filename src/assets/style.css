@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark font-vary;
+  }
+  .title {
+    @apply text-center text-[80px] uppercase text-white;
+  }
+}

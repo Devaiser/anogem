@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Bold.woff2') format('woff2'),
+    url('./fonts/Vary-Bold.woff') format('woff'),
+    url('./fonts/Vary-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-ExtraBlack.woff2') format('woff2'),
+    url('./fonts/Vary-ExtraBlack.woff') format('woff'),
+    url('./fonts/Vary-ExtraBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Black.woff2') format('woff2'),
+    url('./fonts/Vary-Black.woff') format('woff'),
+    url('./fonts/Vary-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Light.woff2') format('woff2'),
+    url('./fonts/Vary-Light.woff') format('woff'),
+    url('./fonts/Vary-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Thin.woff2') format('woff2'),
+    url('./fonts/Vary-Thin.woff') format('woff'),
+    url('./fonts/Vary-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Regular.woff2') format('woff2'),
+    url('./fonts/Vary-Regular.woff') format('woff'),
+    url('./fonts/Vary-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-ExtraLight.woff2') format('woff2'),
+    url('./fonts/Vary-ExtraLight.woff') format('woff'),
+    url('./fonts/Vary-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-ExtraBold.woff2') format('woff2'),
+    url('./fonts/Vary-ExtraBold.woff') format('woff'),
+    url('./fonts/Vary-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vary';
+  src:
+    url('./fonts/Vary-Medium.woff2') format('woff2'),
+    url('./fonts/Vary-Medium.woff') format('woff'),
+    url('./fonts/Vary-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
