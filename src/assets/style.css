@@ -9,4 +9,22 @@
   .title {
     @apply text-center text-[80px] uppercase text-white;
   }
+
+  @media(max-width: 1024px) {
+    .title {
+      @apply text-[60px];
+    }
+  }
+
+  @media(max-width: 768px) {
+    .title {
+      @apply text-[40px];
+    }
+  }
+
+  @media(max-width: 425px) {
+    .title {
+      @apply text-[28px];
+    }
+  }
 }

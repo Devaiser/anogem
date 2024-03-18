@@ -1,29 +1,39 @@
 <template>
-  <section class="px-32 py-14">
+  <section class="px-32 py-14 max-[610px]:px-12 max-[425px]:px-7 max-[425px]:py-5">
     <div class="flex justify-center">
       <TheBadge text="We're simply the best" />
     </div>
     <h2 class="title">Why work with us</h2>
-    <div class="mt-11">
+    <div class="mt-11 max-[640px]:mt-7">
       <div
         v-for="(question, idx) in questions"
         :key="idx"
-        class="cursor-pointer border-b border-primary py-6 first:!pt-0"
+        class="cursor-pointer border-b border-primary max-[640px]:py-4 py-6 first:!pt-0"
       >
         <div class="flex items-center justify-between" @click="handleAction(idx)">
           <div class="flex items-center">
             <TheBadge :text="question.letter" class="mr-10" />
-            <h3 class="text-4xl uppercase text-white">{{ question.title }}</h3>
+            <h3 
+              class="
+                max-[1024px]:text-xl text-4xl uppercase text-white
+                max-[640px]:text-base
+                ">{{ question.title }}</h3>
           </div>
-          <component :is="question.isExpanded ? IconMinus : IconPlus" />
+          <component class="icon-plus" :is="question.isExpanded ? IconMinus : IconPlus" />
         </div>
 
         <Collapse as="div" class="v-collapse" :when="question.isExpanded">
-          <div class="pl-[103px] pr-40 pt-6">
+          <div class="
+            max-[768px]:pr-[30px] 
+            max-[768px]:pl-[80px]
+            max-[640px]:pl-[45px]
+            max-[640px]:pt-3
+            pl-[103px] pr-40 pt-6
+            ">
             <p
               v-for="answer in question.answer"
               :key="answer"
-              class="text-xl font-light text-white"
+              class="max-[1024px]:text-base max-[640px]:text-[14px] text-xl font-light text-white"
             >
               {{ answer }}
             </p>
@@ -110,5 +120,11 @@ const handleAction = (selectedIndex: number) => {
   transition:
     height 0.5s cubic-bezier(0.33, 1, 0.68, 1),
     opacity 1.7s ease-in-out;
+}
+
+@media(max-width: 640px) {
+.icon-plus {
+  max-width: 30px;
+}
 }
 </style>

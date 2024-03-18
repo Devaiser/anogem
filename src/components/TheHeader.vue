@@ -1,12 +1,12 @@
 <template>
-  <header class="fixed left-0 top-0 z-50 flex h-28 w-full px-32 pt-6">
+  <header class="fixed left-0 top-0 z-50 flex justify-between h-28 w-full px-32 pt-6 max-[610px]:px-12">
     <div class="w-1/3 flex-shrink">
       <RouterLink to="/" class="w-fit">
         <img src="/img/logo.svg" alt="logo" />
       </RouterLink>
     </div>
-    <div class="flex w-1/3 justify-center">
-      <nav class="hidden justify-center">
+    <div class="flex w-1/3 justify-center max-[1024px]:hidden">
+      <nav class="justify-center">
         <ul class="flex h-10 w-full items-center rounded-full border border-white p-1">
           <li v-for="item in menu" :key="item.name" class="h-full">
             <RouterLink
@@ -28,6 +28,11 @@
         <span class="mr-2 text-sm uppercase text-white">order</span>
         <IconChevronRightVue color="white" />
       </a>
+      <div
+        class="max-[1024px]:flex hidden ml-2 min-w-10 h-10 items-center justify-center rounded-full border border-white"
+      >
+        <IconChevronRightVue color="white" />
+      </div>
     </div>
   </header>
 </template>

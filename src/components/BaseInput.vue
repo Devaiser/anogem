@@ -19,4 +19,10 @@ defineProps({
     font-size: 20px;
     outline: none;
 }
+
+@media(max-width: 640px) {
+    .input {
+        font-size: 16px;
+    }
+}
 </style>

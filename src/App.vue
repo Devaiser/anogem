@@ -4,9 +4,9 @@
     <main class="mt-36">
       <GalaxyBg />
       <RouterView v-slot="{ Component }">
-        <Transition name="fade" mode="out-in">
+        <!-- <Transition name="fade" mode="out-in"> -->
           <component :is="Component" :key="$route.path" />
-        </Transition>
+        <!-- </Transition> -->
       </RouterView>
       <TheFooter />
     </main>

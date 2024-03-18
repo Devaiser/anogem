@@ -1,27 +1,60 @@
 <template>
-  <section ref="section" class="relative flex w-full flex-col px-32">
+  <section ref="section" class="relative flex w-full flex-col px-32 max-[610px]:px-12">
     <div
       v-for="(item, idx) in items"
       :key="idx"
-      class="relative z-10 mt-5 first:mt-0"
+      class="relative z-10 mt-5 first:mt-0
+      max-[610px]:mt-8
+      "
       :style="`height: ${itemHeight}px`"
     >
       <div class="cube h-full">
         <div
-          class="flippity border-primary flex items-center justify-center border-b"
+          class="
+            flippity border-primary flex items-center justify-center border-b
+            max-[1024px]:flex-col
+            max-[1024px]:items-start
+            "
           :style="`height: ${itemHeight}px`"
         >
           <TheBadge :text="`0${idx + 1}/0${items.length}`" />
-          <h2 class="text-clamp font-extralight uppercase leading-none text-white">
+          <h2 
+          class="
+            text-[50px] font-extralight uppercase leading-none text-white
+            max-[1024px]:w-full
+            max-[1024px]:text-center
+            max-[1024px]:text-[40px]
+            max-[768px]:text-3xl
+            ">
             {{ item.title }}
           </h2>
         </div>
         <div
-          class="flop border-primary flex items-center justify-center border-b"
+          class="
+            flop border-primary flex 
+            items-center justify-center border-b
+            max-[1024px]:flex-col 
+            max-[1024px]:items-start
+            "
           :style="`height: ${itemHeight}px`"
         >
-          <TheBadge :text="item.word" />
-          <div class="max-w-[500px] font-light text-white">
+          <div class="w-full hidden max-[1024px]:flex items-center justify-between">
+            <TheBadge :text="item.word" />
+            <div
+              class="max-[1024px]:flex hidden ml-2 w-10 h-10 items-center justify-center rounded-full bg-white"
+            >
+              <IconChevronRight color="black" />
+            </div>
+          </div>
+
+          <TheBadge class="max-[1024px]:hidden" :text="item.word" />
+          <div class="
+            max-w-[500px] font-light text-white
+            max-[1024px]:mt-3
+            max-[1024px]:max-w-[100%]
+            max-[768px]:text-[14px]
+            max-[610px]:mb-8
+            ">
             {{ item.text }}
           </div>
         </div>
@@ -38,6 +71,7 @@
 import { ref, computed } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 import TheBadge from '@/components/TheBadge.vue'
+import IconChevronRight from './icons/IconChevronRight.vue';
 
 const section = ref<HTMLElement | null>(null)
 const { height } = useWindowSize()

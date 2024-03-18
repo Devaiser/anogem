@@ -1,5 +1,9 @@
 <template>
-  <div class="text-white">roadmap</div>
+  <RoadMap />
+  <FormSection />
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FormSection from '@/components/FormSection.vue';
+import RoadMap from '@/components/RoadMap.vue';
+</script>
 <style scoped></style>
