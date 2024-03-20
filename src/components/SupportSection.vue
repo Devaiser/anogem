@@ -12,7 +12,7 @@
                   max-[1200px]:left-[46%] 
                   max-[768px]:left-[44%] 
                   max-[640px]:left-[43%] 
-                  max-[425px]:left-[46%] 
+                  max-[425px]:left-[44%] 
                   max-[425px]:text-3xl
                   right-20
                 ">CEX</div> 
@@ -46,7 +46,7 @@
                   max-[1200px]:left-[46%] 
                   max-[768px]:left-[44%] 
                   max-[640px]:left-[43%] 
-                  max-[425px]:left-[46%] 
+                  max-[425px]:left-[44%] 
                   max-[425px]:text-3xl
                   left-20
                   ">DEX</div> 
@@ -506,17 +506,17 @@ import TheBadge from './TheBadge.vue';
 
 /* GREEN */
 .circle-container .circle:nth-of-type(1) {
-  transform: rotate(318deg) translate(10em) rotate(-180deg);
+  transform: rotate(313deg) translate(9.5em) rotate(-180deg);
 }
 
 /* BINANCE */
 .circle-container .circle:nth-of-type(2) {
-  transform: rotate(99deg) translate(-9em) rotate(-90deg);
+  transform: rotate(95deg) translate(-8.7em) rotate(-90deg);
 }
 
 /* X */
 .circle-container .circle:nth-of-type(3) {
-  transform: rotate(170deg) translate(-11em) rotate(210deg);
+  transform: rotate(167deg) translate(-10.3em) rotate(210deg);
 }
 
 /* A HALF */
@@ -543,16 +543,16 @@ import TheBadge from './TheBadge.vue';
 
 /* HORSE */
 .circle-container_two .circle_two:nth-of-type(3) {
-  transform: rotate(-169deg) translate(8.5em) rotate(155deg);
+  transform: rotate(-173deg) translate(8.5em) rotate(155deg);
 }
 
 /* RABBIT */
 .circle-container_two .circle_two:nth-of-type(4) {
-  transform: rotate(-307deg) translate(-8.5em) rotate(-60deg);
+  transform: rotate(-312deg) translate(-8.5em) rotate(-60deg);
 }
 
 .circle-container_two .circle_two:nth-of-type(5) {
-  transform: rotate(-270deg) translate(-8.5em) rotate(-60deg);
+  transform: rotate(-272deg) translate(-8.5em) rotate(-60deg);
 }
 }
 </style>

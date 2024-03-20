@@ -1,5 +1,5 @@
 <template>
-    <section class="px-32 py-14 max-[610px]:px-12 max-[425px]:py-5 max-[425px]:px-7">
+    <section class="px-32 py-14 max-[610px]:px-12 max-[425px]:py-5 max-[425px]:px-7 max-[375px]:px-5">
         <div class="flex max-[610px]:flex-col max-[610px]:gap-2 max-[610px]:items-center justify-center">
             <TheBadge text="Platform access + personal manager" />
             <TheBadge text="We work 24/7" />

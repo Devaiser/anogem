@@ -2,8 +2,7 @@
   <div
     class="
       border-primary mr-5 flex h-10 w-fit items-center justify-center rounded-full border px-6
-      max-[768px]:px-4
-      max-[640px]:px-2
+      max-[640px]:px-4
       max-[640px]:h-8
       "
   >

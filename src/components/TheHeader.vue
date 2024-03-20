@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed left-0 top-0 z-50 flex justify-between h-28 w-full px-32 pt-6 max-[610px]:px-12">
+  <header class="fixed left-0 top-0 z-50 flex justify-between h-28 w-full px-32 pt-6 max-[610px]:px-12 max-[375px]:px-5">
     <div class="w-1/3 flex-shrink">
       <RouterLink to="/" class="w-fit">
-        <img src="/img/logo.svg" alt="logo" />
+        <img src="/img/logo.png" alt="logo" />
       </RouterLink>
     </div>
     <div class="flex w-1/3 justify-center max-[1024px]:hidden">
@@ -31,7 +31,7 @@
       <div
         class="max-[1024px]:flex hidden ml-2 min-w-10 h-10 items-center justify-center rounded-full border border-white"
       >
-        <IconChevronRightVue color="white" />
+        <img src="/img/menu.svg" alt="menu"/>
       </div>
     </div>
   </header>

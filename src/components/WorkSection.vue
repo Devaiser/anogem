@@ -1,5 +1,5 @@
 <template>
-  <section class="px-32 py-14 max-[610px]:px-12 max-[425px]:px-7 max-[425px]:py-5">
+  <section class="px-32 py-14 max-[610px]:px-12 max-[425px]:px-7 max-[425px]:py-5 max-[375px]:px-5">
     <div class="flex justify-center">
       <TheBadge text="We're simply the best" />
     </div>

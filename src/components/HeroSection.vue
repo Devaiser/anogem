@@ -1,5 +1,5 @@
 <template>
-  <section ref="section" class="relative flex w-full flex-col px-32 max-[610px]:px-12">
+  <section ref="section" class="relative flex w-full flex-col px-32 max-[610px]:px-12 max-[375px]:px-5">
     <div
       v-for="(item, idx) in items"
       :key="idx"
@@ -17,7 +17,7 @@
             "
           :style="`height: ${itemHeight}px`"
         >
-          <TheBadge :text="`0${idx + 1}/0${items.length}`" />
+          <TheBadge :text="`${idx + 1}`" />
           <h2 
           class="
             text-[50px] font-extralight uppercase leading-none text-white
@@ -41,7 +41,7 @@
           <div class="w-full hidden max-[1024px]:flex items-center justify-between">
             <TheBadge :text="item.word" />
             <div
-              class="max-[1024px]:flex hidden ml-2 w-10 h-10 items-center justify-center rounded-full bg-white"
+              class="max-[1024px]:flex max-[640px]:w-8 max-[640px]:h-8 hidden ml-2 w-10 h-10 items-center justify-center rounded-full bg-white"
             >
               <IconChevronRight color="black" />
             </div>
